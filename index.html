@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>
+            Registrattion Form With Validation
+        </title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="./respones.html" method="get" align="center">
+            <legend>Registration Form</legend>
+            <fieldset>
+            <label for="UName">UserName</label>
+            <br>
+            <input type="text" name="UName" id="UName" pattern="[a-zA-Z.\d]{4,12}" title="Only Alphabets and Numbers Are Allowed within size of 4 to 12" required>
+            <br>
+            <label for="pwd">Password</label>
+            <br>
+            <input type="text" name="Pwd" id="pwd" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%&])[a-zA-Z\d@#$%&]{8,16}" title="Password Should Contain one Capital Letter,One Small Letter,One Spacial Symbol,One Number" required>
+            <br>
+            <label for="mail">Email</label>
+            <br>
+            <input type="text" name="mail" id="mail" pattern="[a-z\d._]+@[a-z]+\.[a-z]{2,}$" title="Please Enter Email In Correct Format" required>
+            <br>
+            <label for="phno">Phone Number</label>
+            <br>
+            
+            <input type="text" name="phno" id="phno" pattern="\+91[6-9]\d{9}" title="Please Enter an Indian Mobile Number which starts with 6,7,8,9 and it should start with 6,7,8,9 and must contain 10 digits" required>
+            <br>
+            <label for="dob">Date Of Birth</label>
+            <br>
+            <input type="number" name="dob" id="dob" pattern="[1900-2024][1-12][1-31]\{d{4}-\d{2}-\d{2}}" title="Please Correctly Enter Your Date oF Birth" required>
+            <br>
+            <label for="state">Enter Your State</label>
+            <br>
+            <select name="state" id="state" required>
+
+                <option value="Ap">Andhra Pradesh</option>
+                <option value="Arp">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Br">Bihar</option>
+                <option value="Cg">Chattisgarh</option>
+                <option value="Del">Delhi</option>
+                <option value="DD">Daman And Diu</option>
+                <option value="Dn">Dadra And Nagar Haveli</option>
+                <option value="Gj">Gujarat</option>
+                <option value="ga">Goa</option>
+                <option value="Ha">Haryana</option>
+                <option value="Hp">Himachal Pradesh</option>
+                <option value="Jh">Jharkhand</option>
+                <option value="Jk">Jammu And Kashmir</option>
+                <option value="ka">Karnataka</option>
+                <option value="ke">Kerala</option>
+                <option value="ld">Lakshwadeep</option>
+                <option value="Mh">Maharastra</option>
+                <option value="Ma">Manipur</option>
+                <option value="Mi">Mizoram</option>
+                <option value="Mp">Madhya Pradesh</option>
+                <option value="Nl">Nagaland</option>
+                <option value="or">Orissa</option>
+                <option value="pn">Punjab</option>
+                <option value="pc">Pondicherry</option>
+                <option value="Rj">Rajasthan</option>
+                <option value="sk">Sikkim</option>
+                <option value="tn">Tamil Nadu</option>
+                <option value="up">Uttar Pradesh</option>
+                <option value="uk">Uttarakhand</option>
+            
+            </select>
+            <br>
+            <label for="city">Enter Your City</label>
+            <br>
+            
+            <input list="cities" name="city" id="city" required>
+            <datalist id="cities">
+                <option value="Anantapur"></option>
+                <option value="Chittor"></option>
+                <option value="Srikakulam"></option>
+                <option value="Visakhapatnam">
+                <option value="Vizianagaram">
+                <option value="Vijayawada">
+                <option value="Kurnool">
+                <option value="Kadapa">
+                <option value="Guntur">
+                <option value="Ongole">
+                <option value="Nellore">
+                <option value="East Godavari">
+                <option value="West Godavari">
+            </datalist>
+            <br>
+            <input type="submit" value="submit">
+
+        </fieldset>
+
+
+        </form>
+    </body>
+</html>
